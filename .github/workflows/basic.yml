@@ -20,7 +20,7 @@ jobs:
               env: 
                 REPO_NAME: ${{github.event.repository.name}}
               run: |
-                 if echo REPO_NAME | grep -iEq "^prosight-automation" then
+                 if echo REPO_NAME | grep -iEq "^prosight-automation"; then
                   echo "Same Repo"
                  else
                   echo "Diff Repo"
